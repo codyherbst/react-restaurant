@@ -2,7 +2,7 @@
   "name": "react-restaurant",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/codyherbst/react-restaurant.git",
+  "homepage": "https://codyherbst.github.io/react-restaurant",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
