@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/codyherbst/react-restaurant.git/static/css/main.5f361e03.chunk.css",
+    "main.js": "/codyherbst/react-restaurant.git/static/js/main.7f2bd823.chunk.js",
+    "main.js.map": "/codyherbst/react-restaurant.git/static/js/main.7f2bd823.chunk.js.map",
+    "runtime-main.js": "/codyherbst/react-restaurant.git/static/js/runtime-main.61b09f3b.js",
+    "runtime-main.js.map": "/codyherbst/react-restaurant.git/static/js/runtime-main.61b09f3b.js.map",
+    "static/css/2.de424728.chunk.css": "/codyherbst/react-restaurant.git/static/css/2.de424728.chunk.css",
+    "static/js/2.61cf756c.chunk.js": "/codyherbst/react-restaurant.git/static/js/2.61cf756c.chunk.js",
+    "static/js/2.61cf756c.chunk.js.map": "/codyherbst/react-restaurant.git/static/js/2.61cf756c.chunk.js.map",
+    "index.html": "/codyherbst/react-restaurant.git/index.html",
+    "precache-manifest.fe773aed23f60c3d13983b62032ea0a8.js": "/codyherbst/react-restaurant.git/precache-manifest.fe773aed23f60c3d13983b62032ea0a8.js",
+    "service-worker.js": "/codyherbst/react-restaurant.git/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/codyherbst/react-restaurant.git/static/css/2.de424728.chunk.css.map",
+    "static/css/main.5f361e03.chunk.css.map": "/codyherbst/react-restaurant.git/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.61cf756c.chunk.js.LICENSE.txt": "/codyherbst/react-restaurant.git/static/js/2.61cf756c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.61b09f3b.js",
+    "static/css/2.de424728.chunk.css",
+    "static/js/2.61cf756c.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.7f2bd823.chunk.js"
+  ]
+}
