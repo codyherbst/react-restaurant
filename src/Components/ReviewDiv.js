@@ -8,9 +8,9 @@ function ReviewDiv() {
         <React.Fragment>
             <Container fluid className='text-center' id='reviews'>
                 <div className='text-center pt-5'>
-                        <h1>Testimonials</h1>
+                        <h1 className='pb-4'>Testimonials</h1>
                     <Row>
-                        <Col sm-12 lg-14>
+                        <Col sm='12' lg='4'>
                             <h3>John Doe</h3>
                             <p>
                             Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, 
@@ -20,7 +20,7 @@ function ReviewDiv() {
                             nisi qui.
                             </p>
                         </Col>
-                        <Col sm-12 lg-4>
+                        <Col sm='12' lg='4'>
                             <h3> Eileen Dover</h3>
                             <p>
                             Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore 
@@ -32,7 +32,7 @@ function ReviewDiv() {
                             sapiente accusamus tattooed echo park.
                             </p>
                         </Col>
-                        <Col sm-12 lg-4>
+                        <Col sm='12' lg='4'>
                             <h3>Joe Shmoe</h3>
                             <p>
                             Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny 

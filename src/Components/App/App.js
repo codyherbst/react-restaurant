@@ -6,6 +6,7 @@ import CarouselDiv from '../Carousel/CarouselDiv'
 import AboutDiv from '../AboutDiv'
 import SpecialDiv from '../SpecialDiv'
 import ReviewDiv from '../ReviewDiv'
+import ContactDiv from '../ContactDiv'
 import 'bootstrap/dist/css/bootstrap.min.css'
 let axios = require('axios')
 
@@ -44,6 +45,7 @@ class App extends React.Component {
           specialItem={this.state.specialItem}
         />
         <ReviewDiv />
+        <ContactDiv />
 
       </div>
     );
@@ -59,11 +61,10 @@ class App extends React.Component {
       appItems = JSON.parse(localStorage.getItem('appItems'))
       specialItem = JSON.parse(localStorage.getItem('specialItem'))
       await this.setState({ mainItems: mainItems, appItems: appItems, specialItem: specialItem })
-      console.log({mainItems, appItems, specialItem})
     } else {
 
       //getting entrees
-      await axios.get('https://entree-f18.herokuapp.com/v1/menu/15')
+      await axios.get('https://entree-f18.herokuapp.com/v1/menu/16')
 
         .then(function (response) {
           mainItems = response.data.menu_items;
@@ -107,7 +108,16 @@ class App extends React.Component {
         .finally(function () {
         })
 
-        console.log({mainItems, appItems, specialItem})
+      mainItems.map(item => {
+        item.price = this.getPrice()
+      })
+      appItems.map(item => {
+        item.price = this.getPrice()
+      })
+      specialItem.price = this.getPrice()
+
+      console.log(mainItems)
+
       await this.setState({ mainItems: mainItems, appItems: appItems, specialItem: specialItem })
       localStorage.setItem('mainItems', JSON.stringify(this.state.mainItems))
       localStorage.setItem('appItems', JSON.stringify(this.state.appItems))
@@ -116,7 +126,10 @@ class App extends React.Component {
 
 
 
-    console.log(this.state.mainItems)
+  }
+
+  getPrice() {
+    return '$' + Math.floor(Math.random() * Math.floor(19) + 10) + '.99';
   }
 
   // axiosTest() {
