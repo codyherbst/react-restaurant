@@ -4,8 +4,8 @@ import { Nav } from 'react-bootstrap'
 
 function NavbarDiv() {
     return (
-        <Navbar collapseOnSelect expand="lg" bg="light"  variant="light" sticky='top'>
-            <Navbar.Brand href="#home" className='ml-3'>React-Bootstrap</Navbar.Brand>
+        <Navbar collapseOnSelect expand="lg" bg="light" variant="light" sticky='top' className='shadow-lg'>
+            <Navbar.Brand href="#home" className='ml-3'>Restaurant Name</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 {/* <Nav className="mr-auto">
@@ -15,10 +15,21 @@ function NavbarDiv() {
                     </Nav> */}
                 <Nav className='mr-auto' />
                 <Nav>
-                    <Nav.Link href="#about">More deets</Nav.Link>
-                    <Nav.Link eventKey={2} href="#memes">
-                        Dank memes
-                        </Nav.Link>
+                    <Nav.Link eventKey={2} href="#about">
+                        About
+                    </Nav.Link>
+                    <Nav.Link eventKey={2} href="#special">
+                        Special
+                    </Nav.Link>
+                    <Nav.Link eventKey={2} href="#menu">
+                        Menu
+                    </Nav.Link>
+                    <Nav.Link eventKey={2} href="#reviews">
+                        Reviews
+                    </Nav.Link>
+                    <Nav.Link eventKey={2} href="#contact">
+                        Contact Us
+                    </Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
