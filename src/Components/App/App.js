@@ -5,6 +5,7 @@ import NavbarDiv from '../NavbarDiv'
 import CarouselDiv from '../Carousel/CarouselDiv'
 import AboutDiv from '../AboutDiv'
 import SpecialDiv from '../SpecialDiv'
+import ReviewDiv from '../ReviewDiv'
 import 'bootstrap/dist/css/bootstrap.min.css'
 let axios = require('axios')
 
@@ -42,6 +43,7 @@ class App extends React.Component {
           mainTitles={this.state.mainTitles}
           specialItem={this.state.specialItem}
         />
+        <ReviewDiv />
 
       </div>
     );

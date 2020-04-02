@@ -5,7 +5,7 @@ class CarouselDiv extends React.Component {
 
     render() {
         return (
-            <Carousel>
+            <Carousel id='home'>
                 <Carousel.Item>
                     <img
                         className="d-block w-100"
